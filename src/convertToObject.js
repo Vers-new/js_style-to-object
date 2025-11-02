@@ -31,13 +31,13 @@ function convertToObject(sourceString) {
     })
     .filter(Boolean);
 
-  const obj = pairs.reduce((acc, [key, value]) => {
+  const styleObject = pairs.reduce((acc, [key, value]) => {
     acc[key] = value;
 
     return acc;
   }, {});
 
-  return obj;
+  return styleObject;
 }
 
 module.exports = convertToObject;
